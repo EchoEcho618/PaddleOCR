@@ -44,7 +44,7 @@ def do_convert():
             img_file = example["file_upload"]
             p = img_file.find("-")
             img_file = img_file[p + 1:]
-            result.append(f"train/cls/train/{img_file}\t{example['annotations'][0]['result'][0]['value']['choices'][0]}")
+            result.append(f"images/{img_file}\t{example['annotations'][0]['result'][0]['value']['choices'][0]}")
         return result
 
     train_examples = _convert_examples(raw_examples[:p1])

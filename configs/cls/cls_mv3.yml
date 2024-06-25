@@ -13,7 +13,7 @@ Global:
   save_inference_dir:
   use_visualdl: False
   infer_img: doc/imgs_words_en/word_10.png
-  label_list: ['0','180']
+  label_list: ['0','90','180','270']
 
 Architecture:
   model_type: cls
